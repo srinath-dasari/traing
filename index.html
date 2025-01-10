@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script> 
-        //let a=100;
-        //let b=20;
-        //if (a>b){
-          //  document.write("a is greater than b");
+    <script>
+        //a=prompt("Enter a number")
 
-        //}else{
-        //    document.write("b is greater than a");
+        //if(a%2==0 && a%3==0){
+        //    document.write("The number is divisible by both 2 and 3")
         //}
-        //age=prompt("Enter your age");
-        //name=prompt("Enter your name");
-        //if(age<18){
-          //  alert(name+" you are too young to marry");
-        //}else if(age>35){
-          //  alert(name+" you are too old to mary");
-        //}else{
-          //  alert(name+" perfect age to mary");
+        //else{
+        //    document.write("The number is not divisible by 2 and 3")
         //}
-        a=prompt("enter a score")
-        b=prompt("enter b score")
-        let sum=a+b;
-        if(a>300 || b>300 && sum<500){
-            document.write("can team up")
+
+        //a=prompt("enter first number")
+        //b=prompt("enter second number")
+        //c=prompt("enter third number")
+
+        //if(a>b && a>c){
+          //  document.write(`${a} is greater`)
+        //}else{
+          //  if(b>c){
+            //    document.write(`${b} is greater`)
+            //}else{
+              //  document.write(`${c}C is greater`)
+            //}
+        
+        //}
+        a=prompt("Total no of working days")
+        b=prompt("Total no of days for absent")
+        c=(b/a)*100
+        d=100-c
+        if (d>=75){
+            document.write("percentage is greater than 75")
         }else{
-            document.write("canot team up")
+            document.write("percentage is less than 75")
         }
     </script>
 </body>
