@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // arrow function with one operator
+        let c=()=>{
+            document.write("hi srinath")
+        }
+        c()
+        document.write("<br>")
+
+        //arrow function for multiple operator
+        var a=(b,d)=>{
+            document.write(parseInt(b)+parseInt(d))
+        }
+        b=prompt("enter B number")
+        d=prompt("enter D number")
+        a(b,d)
+        document.write("<br>")
+        //Terniary operator
+        //syntax==>condition? if true: if false
+        var condition=40
+        var result=(condition>=41)? "hi iam srinath" : "invalid condition"
+        document.write(result)
+        document.write("<br>")
+
+        //using arrow function
+        var condition=19
+        var result=(condition<=18)?()=>document.write("hi iam srinath"):
+        ()=>document.write("iam not srinath")
+        result()
+        document.write("<br>")
+
+        //synchronus function
+        function task1(){
+            document.write("task 1")
+        }
+        
+        function task2(){
+            document.write("task 2")
+        }
+        
+        function task3(){
+            document.write("task 3")
+        }
+
+        task1()
+        document.write("<br>")
+        task3()
+        document.write("<br>")
+        task2()
+        document.write("<br>")
+        
+        //Asynchronus function
+        document.write("hi iam ")
+        setTimeout(()=>{
+            document.write("hi!")
+        },5000);
+        document.write("srinath")
+        
+        
+    </script>
+</body>
+</html>

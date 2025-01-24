@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Asynchronus function
+        document.write("hi iam ")
+        setTimeout(()=>{
+            document.write("hi! srinath, ")
+            document.write("How are you?")
+        },2000);
+        document.write("srinath")
+
+        // callback function
+        function greet(name,callback){
+            document.write(`hello,${name}!`)
+        }
+    </script>
+</body>
+</html>
