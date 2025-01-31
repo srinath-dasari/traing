@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>hi</li>
+        <li>sai</li>
+        <li>charan</li>
+    </ul>
+    <script>
+        const ul=document.querySelector('ul')
+        const lists=document.querySelectorAll('li')
+        for(const list of lists){
+            console.log(`Removing:${list.textContent}`)
+            ul.removeChild(list)
+        }
+    </script>
+</body>
+</html>

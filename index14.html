@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index14.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <h1 id="hi">hi iam srinath</h1>
+    <h1 class="hi2">iam lohith</h1>
+    <h2>iam sai charan</h2>
+    <script>
+        var x=document.getElementById("hi").innerHTML
+        document.write(x)
+        console.log(x)
+        document.write("<br>")
+        var t=document.getElementsByClassName("hi2")[0].innerHTML
+        document.write(t)
+        console.log(t)
+        document.write("<br>")
+        var t1=document.getElementsByTagName("h2")[0].innerHTML
+        document.write(t1)
+        console.log(t1)
+        document.write("<br>")
+        var t2=document.getElementsByTagName("h2")
+        for(let i=0;i<t2.length;i++){
+            document.write(t1[i].innerHTML)
+        }
+        document.write("<br>")
+        var x=document.querySelector("a")
+        document.write(x)
+        console.log(x)
+
+
+    </script>
+</body>
+</html>
